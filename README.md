@@ -1,6 +1,6 @@
 # ExecFinder
 
-`ExecFinder` is a Node.js module that helps you find executable files (executables) on different platforms such as Windows, macOS, and Linux. It provides a way to scan through common directories where executables are often installed, making it easier to locate specific executable files.
+`ExecFinder` is a Node.js module that helps you find executables on Windows, macOS and Linux. It provides a way to scan through common directories where executables are often installed, making it easier to locate specific executable files.
 
 ## Installation
 
@@ -36,12 +36,6 @@ Creates a new instance of `ExecFinder`. You can provide optional configuration o
 
 - `options.recursion`: The maximum recursion level when scanning subdirectories (default: 2).
 
-### `finder.scanDirs([refresh])`
-
-Scans the common directories for executables. Returns a promise that resolves to an array of file paths.
-
-- `refresh` (optional): Set to `true` to force a refresh of the executable list.
-
 ### `finder.find(names, [options])`
 
 Finds executables by name. Returns a promise that resolves to an object containing arrays of file paths for each name.
@@ -53,6 +47,7 @@ Finds executables by name. Returns a promise that resolves to an object containi
 ### `finder.findOne(names)`
 
 Finds the first occurrence of an executable by name. Returns a promise that resolves to the first found executable path.
+
 
 ## Platform Support
 
