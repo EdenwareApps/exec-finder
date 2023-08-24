@@ -7,7 +7,7 @@ class ExecFinder extends Events {
     constructor(opts) {
         super()
         this.opts = Object.assign({
-            recursion: 2
+            recursion: 3
         }, opts || {});
         switch(process.platform) {
             case 'win32':
@@ -95,7 +95,5 @@ class ExecFinder extends Events {
         })
     }
 }
-
-
 
 module.exports = ExecFinder
